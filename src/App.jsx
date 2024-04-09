@@ -5,7 +5,7 @@ import searchbox from './assets/Components/searchbox';
 function App() {
   return (
  <>
- <div>
+ <div className='bg-zinc-500'>
   <searchbox/>
  </div>
  
