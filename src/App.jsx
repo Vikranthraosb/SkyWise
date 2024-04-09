@@ -6,7 +6,7 @@ import Showinfo from "./Components/Showinfo";
 function App() {
   return (
     <>
-      <div className="bg-zinc-300 min-h-screen	max-w-[100vw] overflow-hidden p-2 ">
+      <div className=" bg-zinc-800  min-h-screen	max-w-[100vw] overflow-hidden p-2 ">
         <WeatherAPP />
       </div>
     </>

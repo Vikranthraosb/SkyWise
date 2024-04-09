@@ -24,10 +24,7 @@ function Showinfo({ info }) {
       <h1 className="m-4 text-cyan-500 text-xl font-semibold ">
         WEATHER IS ...
       </h1>
-      <Card
-        sx={{ maxWidth: 345 }}
-        className="rounded-full border-green-500 border-2"
-      >
+      <Card sx={{ maxWidth: 345 }} className="rounded-xl">
         <CardMedia
           sx={{ height: 140 }}
           image={
@@ -42,10 +39,10 @@ function Showinfo({ info }) {
           }
           title="green iguana"
         />
-        <CardContent className="flex flex-col items-center justify-around bg-green-300 p-3">
+        <CardContent className="flex flex-col items-center justify-around bg-zinc-300 p-3">
           <Typography gutterBottom variant="h5" component="div">
             <div className="flex gap-3 items-center justify-center">
-              <h1 className="text-3xl font-bold text-red-500 uppercase">
+              <h1 className="text-3xl font-bold text-orange-500 uppercase">
                 {info.city}
               </h1>
               <div>
@@ -70,20 +67,21 @@ function Showinfo({ info }) {
           >
             {/* it was giving error as we cannot put an P component inside another P component. so we made the component as Span */}
             <ul className="list-disc m-2 ml-6">
-              <li className="text-lg font-semibold mb-1">
+              <li className="text-lg font-semibold mb-1 text-zinc-800">
                 Temperature = {info.temp}&deg;C
               </li>
-              <li className="text-lg font-semibold mb-1">
+              <li className="text-lg font-semibold mb-1 text-zinc-800">
                 Humidity = {info.humidity}
               </li>
-              <li className="text-lg font-semibold mb-1">
+              <li className="text-lg font-semibold mb-1 text-zinc-800">
                 Max Temp = {info.maxTemp}&deg;C
               </li>
-              <li className="text-lg font-semibold mb-1">
+              <li className="text-lg font-semibold mb-1 text-zinc-800">
                 Min Temp = {info.minTemp}&deg;C
               </li>
-              <li className="text-lg font-semibold mb-1">
-                Weather is <i> {info.weather} </i>
+              <li className="text-lg font-semibold mb-1 text-zinc-800">
+                Weather is{" "}
+                <span className="text-blue-900"> {info.weather} </span>
                 and feels like
                 <i> {info.feelslike} </i>
               </li>

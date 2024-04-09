@@ -4,13 +4,13 @@ import Showinfo from "./Showinfo";
 
 function WeatherAPP() {
   const [weatherinfo, setweatherinfo] = useState({
-    city: "Delhi",
-    feelslike: 37.79,
-    humidity: 55,
-    maxTemp: 32.99,
-    minTemp: 30.94,
-    temp: 32.99,
-    weather: "smoke",
+    city: "____",
+    feelslike: 0,
+    humidity: 0,
+    maxTemp: 0,
+    minTemp: 0,
+    temp: 0,
+    weather: "____",
   });
 
   let updateInfo = (newinfo) => {
