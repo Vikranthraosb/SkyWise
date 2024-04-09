@@ -44,10 +44,23 @@ function Showinfo({ info }) {
         />
         <CardContent className="flex flex-col items-center justify-around bg-green-300 p-3">
           <Typography gutterBottom variant="h5" component="div">
-            <h1 className="text-3xl font-bold text-red-500">
-              {info.city}
-              {}
-            </h1>
+            <div className="flex gap-3 items-center justify-center">
+              <h1 className="text-3xl font-bold text-red-500 uppercase">
+                {info.city}
+              </h1>
+              <div>
+                {" "}
+                {info.humidity > 70 ? (
+                  <UmbrellaIcon />
+                ) : info.temp >= 35 ? (
+                  <WbSunnyIcon />
+                ) : info.temp <= 10 ? (
+                  <AcUnitIcon />
+                ) : (
+                  <SportsCricketIcon />
+                )}
+              </div>
+            </div>
           </Typography>
           <Typography
             variant="body2"
