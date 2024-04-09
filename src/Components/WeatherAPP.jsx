@@ -1,4 +1,4 @@
-import React, { useState } from "react"; //this app jons show info and searchbox components
+import React, { useRef, useState } from "react"; //this app jons show info and searchbox components
 import Searchbox from "./Searchbox";
 import Showinfo from "./Showinfo";
 
@@ -19,7 +19,9 @@ function WeatherAPP() {
   return (
     <div>
       <Searchbox updateInfo={updateInfo} />
-      <Showinfo info={weatherinfo} />
+      <div>
+        <Showinfo info={weatherinfo} />
+      </div>
     </div>
   );
 }

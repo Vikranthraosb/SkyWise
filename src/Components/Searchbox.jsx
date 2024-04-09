@@ -61,8 +61,8 @@ function Searchbox({ updateInfo }) {
   return (
     <div className="flex flex-col items-center justify-evenly w-full h-[23vh] bg-zinc-400 rounded-xl ">
       <h3 className="text-zinc-700 text-bold text-xl mb-1 uppercase mt-2">
-        <b> SkyWise- </b>{" "}
-        <span className="text-sm font-semibold"> By Vikranth.</span>
+        <b className="text-xl"> SkyWise - </b>{" "}
+        <span className="text-xs font-semibold"> By Vikranth.</span>
       </h3>
       <form
         onSubmit={handleSubmit}
