@@ -7,7 +7,6 @@ import AcUnitIcon from "@mui/icons-material/AcUnit";
 import UmbrellaIcon from "@mui/icons-material/Umbrella";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import SportsCricketIcon from "@mui/icons-material/SportsCricket";
-import { motion } from "framer-motion";
 
 function Showinfo({ info }) {
   //different photos for different weathers
@@ -25,18 +24,7 @@ function Showinfo({ info }) {
       <h1 className="m-4 text-cyan-600 text-xl font-semibold ">
         WEATHER IS ...
       </h1>
-      <motion.Card
-        drag
-        dragConstraints={{
-          top: 100,
-          bottom: 100,
-          left: 100,
-          right: 100,
-        }}
-        whileDrag={{ borderColor: "green", borderWidth: 2 }}
-        sx={{ maxWidth: 345 }}
-        className="rounded-xl"
-      >
+      <Card sx={{ maxWidth: 345 }} className="rounded-xl">
         <CardMedia
           sx={{ height: 140 }}
           image={
@@ -100,7 +88,7 @@ function Showinfo({ info }) {
             </ul>
           </Typography>
         </CardContent>
-      </motion.Card>
+      </Card>
     </div>
   );
 }
